@@ -1,0 +1,6 @@
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+
+alias gs="git status"
+alias guc="git reset --soft 'HEAD^'"
+alias gw="git whatchanged"
+alias lc='cless'
