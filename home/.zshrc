@@ -66,8 +66,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# REACT-COMPONENTS STUFF
-export NODE_AUTH_TOKEN=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
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/joel/.sdkman"
