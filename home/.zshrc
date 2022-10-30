@@ -19,11 +19,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git z colored-man-pages colorize aws zsh-syntax-highlighting zsh-autosuggestions )
+plugins=(git z asdf colored-man-pages colorize aws )
 
 ## bring in the plugins
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#  zsh-syntax-highlighting zsh-autosuggestions
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ZSH_COLORIZE_TOOL=chroma
 
@@ -58,23 +59,9 @@ export JDH_ROOT="/Users/joel/jdh/"
 
 ## PATH
 export PATH="$PATH:/Users/joel/go/bin:"
-export PATH="$PATH:/Users/joel/as/bin:"
+#export PATH="$PATH:/Users/joel/as/bin:"
 
 [ -s "/Users/joel/.scm_breeze/scm_breeze.sh" ] && source "/Users/joel/.scm_breeze/scm_breeze.sh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/joel/.sdkman"
-[[ -s "/Users/joel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/joel/.sdkma/bin/sdkman-init.sh"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-eval "$(pyenv init -)"
